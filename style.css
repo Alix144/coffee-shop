@@ -1,0 +1,378 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    line-height: 30px;
+}
+
+header{
+    padding: 10px 0;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+nav {
+    margin: 0 auto;
+}
+
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #B36C32;
+}
+
+nav a:hover{
+    color: #fff;
+}
+
+header img{
+    width: 60px;
+    position: relative;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+h1, h2{
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.landing-div{
+    padding: 0 130px;
+    height: 110vh;
+    background-image: url('images/bg1.png');
+    background-size: cover;
+    background-position: center; 
+    position: relative;
+}
+
+.landing-div .content{
+    width: 500px;
+}
+
+.landing-div h1{
+    margin-bottom: 20px;
+    font-size: 3rem;
+    line-height: 60px;
+}
+
+.landing-div p{
+    margin-bottom: 20px;
+   
+    opacity: 0.45;
+    font-weight: 200;
+}
+
+h1 span{
+    color: #B36C32;
+}
+
+button{
+    width: 150px;
+    height: 35px;
+    background-color: #B36C32;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #fff;
+    color: #B36C32;
+}
+
+/**** about us ****/
+
+.about-us{
+    background-color: #482011;
+    position: relative;
+}
+
+.about-us h2{
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.about-us p{
+    margin-bottom: 20px;
+    opacity: 0.45;
+    font-weight: 200;
+}
+
+.about-us .content{
+    padding: 50px 0;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.about-us img{
+    width: 30%;
+    min-width: 115px;
+    position: absolute;
+    left: -110px;
+    top: -90px;
+}
+
+/* menu */
+.menu{
+    padding: 50px 0 130px; 
+    background-image: url('images/bg2.png');
+    background-size: cover;
+    background-position: center; 
+    position: relative;
+    text-align: center;
+}
+
+.menu h2{
+    margin-bottom: 50px;
+    font-size: 2rem;
+}
+
+.menu img{
+    position: absolute;
+}
+
+.dot{
+    color: #B36C32;
+}
+
+li{
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.mug1{
+    width: 20%;
+    min-width: 80px;
+    top: 120px;
+    left: 80px;
+}
+
+.mug2{
+    width: 25%;
+    min-width: 100px;
+    top: 220px;
+    right: 80px;
+}
+
+/*footer*/
+
+footer{
+    height: 10vh;
+    background-image: url('images/coffee-beans.png');
+    background-size: cover;
+    background-position: center; 
+}
+
+
+/*** Responsive ***/
+@media (max-width: 1000px){
+    .landing-div{
+        height: 100vh;
+    }
+
+    .landing-div .content{
+        width: 400px;
+    }
+    
+    .landing-div h1{
+        margin-bottom: 20px;
+        font-size: 2rem;
+        line-height: 40px;
+    }
+
+    .about-us h2, .menu h2{
+        font-size: 1.5rem;
+    }
+
+    .landing-div p{
+        margin-bottom: 20px;
+        font-size: 0.9rem;
+    }
+
+    .about-us p{
+        font-size: 0.9rem;
+    }
+    
+    button{
+        width: 130px;
+        height: 30px;
+    }
+
+    footer{
+        height: 30px;
+    }
+
+    .menu{
+        padding: 50px 0; 
+    }
+
+    li{
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+
+    .mug1{
+        top: 100px;
+        left: 50px;
+    }
+    
+    .mug2{
+        top: 220px;
+        right: 30px;
+    }
+}
+
+@media (max-width: 850px){
+
+    header img{
+        width: 50px;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+    }
+
+    .landing-div{
+        padding: 0 50px;
+    }
+
+    .about-us img{
+        left: -50px;
+        top: -70px;
+    }
+
+}
+
+@media (max-width: 600px){
+
+    .landing-div{
+        padding-bottom: 50px;
+        height: auto;
+        background-image: url('images/bg1-phone.png');
+    }
+
+    .landing-div .content{
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-us .content{
+        padding: 30px 0;
+        width: 80%;
+    }
+
+    
+    .landing-div h1{
+        text-align: center;
+    }
+    
+    .landing-div p{
+        text-align: center;
+    }
+
+    .about-us h2{
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    
+    .about-us p{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .about-us img{
+        left: -40px;
+        top: -50px;
+    }
+
+    .mug1{
+        top: 80px;
+        left: 20px;
+    }
+    
+    .mug2{
+        top: 240px;
+        right: -5px;
+    }
+}
+
+@media (max-width: 400px){
+
+    header{
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    
+    nav a {
+        font-size: 0.8rem;
+    }
+    
+    header img{
+        width: 35px;
+    }
+
+    .landing-div{
+        padding: 0 10px;
+    }
+
+    .about-us .content{
+        width: 90%;
+    }
+
+    .landing-div h1{
+        margin-bottom: 15px;
+        font-size: 1.5rem;
+        line-height: 30px;
+    }
+
+    .about-us h2, .menu h2{
+        font-size: 1rem;
+    }
+    
+    .landing-div p, .about-us p{
+        font-size: 0.8rem;
+        line-height: 25px;
+    }
+    
+    button{
+        margin-bottom: 20px;
+    }
+
+    .about-us img{
+        left: -30px;
+        top: -30px;
+    }
+
+    li{
+        margin-bottom: 10px;
+        font-size: 13px;
+    }
+
+    .mug1{
+        top: 60px;
+        left: -30px;
+    }
+    
+    .mug2{
+        top: 350px;
+        right: -35px;
+    }
+}
